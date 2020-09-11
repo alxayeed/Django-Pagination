@@ -4,5 +4,11 @@ body {
 .content {
     text-align: center;
     margin-top: 10px;
-    padding-left: 20%;
+}
+
+.post{
+    background-color: ghostwhite;
+    max-width: 50%;
+    margin-left: 25%;
+
 }
