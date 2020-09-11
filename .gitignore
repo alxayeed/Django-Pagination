@@ -1,2 +1,3 @@
-__pycache__/
+paging/__pycache__/
 credentials.py 
+*.pyc
