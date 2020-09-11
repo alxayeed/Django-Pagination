@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}
+Pagination
+{% endblock %}
+
+{% block content %}
+<h1> Welcome to Pagination Home Page</h1>
+{% for post in all_posts %}
+{{ post.title }}
+{% endfor %}
+{% endblock %}
