@@ -10,11 +10,9 @@ def home(request):
 
     # creating Paginator object
     paginator = Paginator(all_posts, 5, 3)
-    # page = paginator.get_page()
+    # getting current page number from request.GET.get dictionary
     page_number = request.GET.get('page')
-    # print(request.GET.get('page', 1))
-    # print(request.GET.get.__doc__)
-    print(page_number)
+    # all posts of the current page
     posts = paginator.page(page_number)
 
     context = {'posts': posts}
